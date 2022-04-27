@@ -4,15 +4,15 @@ import Form from './components/Form';
 
 function App() {
   const [teamMembers, setTeamMembers] = useState([]);
-  const [values, setValues] = useState({ name: '', email: '', role: ''});
+  const [values, setValues] = useState({ name: '', email: '', role: '' });
 
   const onSubmit = () => {
     setTeamMembers([values, ...teamMembers]);
-    setValues({ name: '', email: '', role: ''});
+    setValues({ name: '', email: '', role: '' });
   }
 
   const onChange = (name, value) => {
-    setValues({ ...values, [name]: value});
+    setValues({ ...values, [name]: value });
   }
 
   return (

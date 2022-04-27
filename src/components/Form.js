@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = (props) => {
     const handleChange = event => {
-        const { name, value} = event.target;
+        const { name, value } = event.target;
         props.change(name, value);
     }
 
