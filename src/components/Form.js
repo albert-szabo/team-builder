@@ -15,6 +15,7 @@ const Form = (props) => {
         <form onSubmit={handleSubmit}>
             <label>Name
             <input
+                type='text'
                 placeholder='Enter name here'
                 value={props.values.name}
                 name='name'
@@ -23,6 +24,7 @@ const Form = (props) => {
             </label>
             <label>Email
             <input
+                type='email'
                 placeholder='Enter email here'
                 value={props.values.email}
                 name='email'
@@ -31,6 +33,7 @@ const Form = (props) => {
             </label>
             <label>Role
             <input
+                type='text'
                 placeholder='Enter role here'
                 value={props.values.role}
                 name='role'
